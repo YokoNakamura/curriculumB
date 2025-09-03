@@ -15,7 +15,6 @@ public class Dog {
 		this.name = "犬";
 	}	
 	
-	// Q4：Q2で作成した変数に引数を代入するコンストラクタを作成してください。
 	
 	public Dog(int num) { // コンストラクタ
 		this.num = num;
