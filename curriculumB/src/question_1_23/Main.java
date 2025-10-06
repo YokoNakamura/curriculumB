@@ -29,5 +29,6 @@ public class Main {
 		lion.setSpeed(80);
 
 		System.out.println("速度：" + lion.getSpeed() + "km/h");
+		
 	}
 }
