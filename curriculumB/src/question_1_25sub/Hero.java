@@ -9,7 +9,7 @@ public class Hero extends Person {
 	private int hp;
 	private int mp;
 	private int speed;
-	private int atack;
+	private int attack;
 	private int defence;
 
 	public Hero() {
@@ -17,11 +17,12 @@ public class Hero extends Person {
 		super();
 		Random rand = new Random();
 
-		this.hp = rand.nextInt(1000);
-		this.mp = rand.nextInt(1000);
-		this.speed = rand.nextInt(1000);
-		this.atack = rand.nextInt(1000);
-		this.defence = rand.nextInt(1000);
+		this.hp = rand.nextInt(100,1000);
+		this.mp = rand.nextInt(100,1000);
+		this.speed = rand.nextInt(100,1000);
+		this.attack = rand.nextInt(100,1000);
+		this.defence = rand.nextInt(10,500);
+		
 
 	}
 
@@ -47,7 +48,7 @@ public class Hero extends Person {
 		System.out.println("HP:" + this.hp);
 		System.out.println("MP:" + this.mp);
 		System.out.println("攻撃力:" + this.speed);
-		System.out.println("素早さ:" + this.atack);
+		System.out.println("素早さ:" + this.attack);
 		System.out.println("防御力:" + this.defence);
 
 	}
