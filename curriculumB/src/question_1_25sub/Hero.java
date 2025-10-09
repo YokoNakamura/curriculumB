@@ -2,7 +2,7 @@ package question_1_25sub;
 
 import java.util.Random;
 
-//Student.java
+//Student.java 
 
 public class Hero extends Person {
 	// 独自の属性
