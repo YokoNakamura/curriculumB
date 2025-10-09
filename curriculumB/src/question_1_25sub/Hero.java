@@ -8,9 +8,9 @@ public class Hero extends Person {
 	// 独自の属性
 	private int hp;
 	private int mp;
-	private int sp;
-	private int at;
-	private int df;
+	private int speed;
+	private int atack;
+	private int defence;
 
 	public Hero() {
 		// super()でスーパークラスのコンストラクタを呼び出す
@@ -19,9 +19,9 @@ public class Hero extends Person {
 
 		this.hp = rand.nextInt(1000);
 		this.mp = rand.nextInt(1000);
-		this.sp = rand.nextInt(1000);
-		this.at = rand.nextInt(1000);
-		this.df = rand.nextInt(1000);
+		this.speed = rand.nextInt(1000);
+		this.atack = rand.nextInt(1000);
+		this.defence = rand.nextInt(1000);
 
 	}
 
@@ -46,9 +46,9 @@ public class Hero extends Person {
 		System.out.println("ステータス");
 		System.out.println("HP:" + this.hp);
 		System.out.println("MP:" + this.mp);
-		System.out.println("攻撃力:" + this.sp);
-		System.out.println("素早さ:" + this.at);
-		System.out.println("防御力:" + this.df);
+		System.out.println("攻撃力:" + this.speed);
+		System.out.println("素早さ:" + this.atack);
+		System.out.println("防御力:" + this.defence);
 
 	}
 
