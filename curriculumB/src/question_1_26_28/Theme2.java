@@ -54,6 +54,7 @@ public class Theme2 {
 
 		sub.show();
 
+		scanner.close();
 	}
 
 }

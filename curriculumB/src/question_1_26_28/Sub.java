@@ -24,7 +24,7 @@ public class Sub {
 			System.out.println("体長:" + element[1] + "m");
 
 			System.out.println("速度:" + element[2] + "km/h");
-			
+
 			System.out.println("学名:" + this.getLatinName(element[0]));
 
 			System.out.println();
@@ -33,31 +33,33 @@ public class Sub {
 	}
 
 	private String getLatinName(String name) {
-		
+
 		switch (name) {
-		
+
 		case "ライオン":
-			
+
 			return "パンテラ レオ";
-			
+
 		case "ゾウ":
-			
+
 			return "ロキソドンタ・サイクロティス";
-			
+
 		case "パンダ":
-			
+
 			return "アイルロポダ・メラノレウカ";
-			
+
 		case "チンパンジー":
-			
+
 			return "パン・トゥログロディテス";
-			
+
 		case "シマウマ":
-			
+
 			return "チャップマンシマウマ";
+
+		default:
+
+			return "不明";
+
 		}
-		
-		return "不明";
-		
 	}
 }
