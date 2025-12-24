@@ -40,19 +40,34 @@ public class Sub {
 
 	public void show() {
 
-		String[] data = str.split(",");
+	if(!this.str.matches("^[0-9]+(,[0-9]+)*$")) {
+		
+		return;
+		
+	}
+		
+		String[] input = str.split(",");
 
-		int[] nums = new int[data.length];
+		int[] nums = new int[input.length];
 
-		for (int i = 0; i < data.length; i++) {
+		for (int i = 0; i < input.length; i++) {
 
-			nums[i] = Integer.parseInt(data[i]);
+			nums[i] = Integer.parseInt(input[i]);
 		}
 
-		Arrays.sort(nums);
+		
 
-		if (order.equals("降順")) {
+		if(order.equals("昇順")) {
+			
+			Arrays.sort(nums);
+			
+		}
+		
+		
+		else if (order.equals("降順")) {
 
+			Arrays.sort(nums);
+			
 			for (int i = 0; i < nums.length / 2; i++) { // 反転して降順に
 
 				int temp = nums[i];
@@ -62,6 +77,10 @@ public class Sub {
 				nums[nums.length - 1 - i] = temp;
 			}
 
+		}else {
+			
+			return;
+			
 		}
 
 		for (int i = 0; i < nums.length; i++) {
